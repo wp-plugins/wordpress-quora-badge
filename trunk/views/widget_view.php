@@ -16,11 +16,14 @@ echo $args['after_title'];
 			</span>
 		</li>
 		<?php
-		foreach($data['data']['activity'] as $activity)
+		if(isset($data['data']['activity']) && is_array($data['data']['activity']))
 		{
-			?>
-			<li><?php echo $activity; ?></li>
-			<?php
+			foreach($data['data']['activity'] as $activity)
+			{
+				?>
+				<li><?php echo $activity; ?></li>
+				<?php
+			}
 		}
 		?>
 	</ul>
