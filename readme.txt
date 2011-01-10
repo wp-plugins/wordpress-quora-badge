@@ -3,7 +3,7 @@ Contributors: amanjain
 Tags: Quora, WordPress, Quora Badge
 Requires at least: 3
 Tested up to: 3.0.4
-Stable tag: trunk
+Stable tag: 0.2.1
 
 A plugin to show your Quora activities from WPoid on Twitter(http://twitter.com/wpoid).
 
