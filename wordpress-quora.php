@@ -2,9 +2,9 @@
 /*
 Plugin Name: WordPress Quora Badge
 Plugin URI: http://wpoid.com/plugins
-Description: A plugin to show your Quora activities from WPoid on Twitter(http://twitter.com/wpoid).
+Description: A plugin to show your Quora activities. Brought to you from WPoid (http://twitter.com/wpoid).
 Author: Aman Kumar Jain
-Version: 0.2.2
+Version: 0.2.3
 Author URI: http://amanjain.com
 */
 

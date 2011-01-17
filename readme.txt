@@ -3,13 +3,13 @@ Contributors: amanjain
 Tags: Quora, WordPress, Quora Badge
 Requires at least: 3
 Tested up to: 3.0.4
-Stable tag: 0.2.2
+Stable tag: 0.2.3
 
-A plugin to show your Quora activities from WPoid on Twitter(http://twitter.com/wpoid).
+A plugin to show your Quora activities on your wordpress blog.
 
 == Description ==
 
-This plugin will help you to display your <a href="http://quora.com" target="_blank" title="Quora">Quora</a> Profile Badge in your WordPressed blog sidebar. Show your profile pik, followers, following, @mentions and activity aswell on your sidebar.
+This plugin will help you to display your <a href="http://quora.com" target="_blank" title="Quora">Quora</a> Profile Badge in your blog's sidebar. Show your profile picture, followers, following, @mentions and activity aswell on your sidebar. (Plugin by <a href="http://twitter.com/wpoid" target="_blank" title="WPoid">WPoid</a>)
 
 == Installation ==
 
