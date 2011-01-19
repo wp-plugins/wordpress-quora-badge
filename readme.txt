@@ -3,7 +3,7 @@ Contributors: amanjain
 Tags: Quora, WordPress, Quora Badge
 Requires at least: 3
 Tested up to: 3.0.4
-Stable tag: 0.2.3
+Stable tag: 0.2.4
 
 A plugin to show your Quora activities on your wordpress blog.
 
@@ -22,3 +22,9 @@ This plugin will help you to display your <a href="http://quora.com" target="_bl
 1. Drag the Widget to your sidebar.
 
 2. This is how it will appear.
+
+== Changelog ==
+
+= 0.2.4 =
+* Checking PHP version before installation. 
+* Checking if DOM functions are available.

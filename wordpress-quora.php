@@ -4,7 +4,7 @@ Plugin Name: WordPress Quora Badge
 Plugin URI: http://wpoid.com/plugins
 Description: A plugin to show your Quora activities. Brought to you from WPoid (http://twitter.com/wpoid).
 Author: Aman Kumar Jain
-Version: 0.2.3
+Version: 0.2.4
 Author URI: http://amanjain.com
 */
 
@@ -181,10 +181,23 @@ if(!class_exists('WP_Quara_badge'))
 		{
 			wp_clear_scheduled_hook('wp_quora_badge_cron');
 		}
+		
+		function check_installation()
+		{
+			if(!function_exists('phpversion') || intval(phpversion())<5)
+			{
+				trigger_error('PHP5 or greater is required to use this plugin.', E_USER_ERROR);
+			}
+			else if(!class_exists('DOMDocument') || !class_exists('Domxpath'))
+			{
+				trigger_error('Looks like libxml php extension is not installed. libxml is required to run this plugin.', E_USER_ERROR);
+			}
+		}
 	}
 }
 
 $wp_quara_badge = new WP_Quara_badge();
+register_activation_hook(__FILE__, array(&$wp_quara_badge, 'check_installation'));
 add_action('wp_quora_badge_cron', array(&$wp_quara_badge, 'cron'));
 if(!wp_next_scheduled('wp_quora_badge_cron'))
 {
@@ -192,4 +205,3 @@ if(!wp_next_scheduled('wp_quora_badge_cron'))
 }
 add_action('plugins_loaded', array(&$wp_quara_badge, 'widget_init'));
 register_deactivation_hook(__FILE__, array(&$wp_quara_badge, 'uninstall_cron'));
-
