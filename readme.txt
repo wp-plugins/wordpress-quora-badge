@@ -2,8 +2,8 @@
 Contributors: amanjain 
 Tags: Quora, WordPress, Quora Badge
 Requires at least: 3
-Tested up to: 3.0.4
-Stable tag: 0.2.4
+Tested up to: 3.1
+Stable tag: 0.2.5
 
 A plugin to show your Quora activities on your wordpress blog.
 

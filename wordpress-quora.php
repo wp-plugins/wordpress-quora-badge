@@ -4,7 +4,7 @@ Plugin Name: WordPress Quora Badge
 Plugin URI: http://wpoid.com/plugins
 Description: A plugin to show your Quora activities. Brought to you from WPoid (http://twitter.com/wpoid).
 Author: Aman Kumar Jain
-Version: 0.2.4
+Version: 0.2.5
 Author URI: http://amanjain.com
 */
 
@@ -95,7 +95,10 @@ if(!class_exists('WP_Quara_badge'))
 					}
 					$matches[1][0]=trim($matches[1][0]);
 					$matches[1][0]=substr($matches[1][0], strlen($name), -1).",";
-					
+					if($matches[1][0] == ',')
+					{
+						$matches[1][0] = '';
+					}
 					$rss_item[]=
 						$matches[1][0].
 						"<a href='".$item->get_permalink()."' title='Posted on ".$item->get_date('j F Y | g:i a')."'>".$item->get_title()."</a>";
@@ -122,7 +125,8 @@ if(!class_exists('WP_Quara_badge'))
 				{
 					$name=$items->item(0)->parentNode;
 					$name->removeChild($name->firstChild);
-					$img=$xpath->query("//img[contains(@class, 'profile_photo_img')]");
+					//$img=$xpath->query("//img[contains(@class, 'profile_photo_img')]");
+					$img=$xpath->query("//div[contains(@class, 'side_col')]//img[contains(@class, 'profile_photo_img')]");
 					$count=$xpath->query("//div[contains(@class, 'mini_count')]");
 					if($name && $img->length>=1 && $count->length==3)
 					{
