@@ -25,6 +25,9 @@ This plugin will help you to display your <a href="http://quora.com" target="_bl
 
 == Changelog ==
 
+= 0.2.5 =
+* Updated the HTML parsing code, to support change in Quara's user's profile page.
+
 = 0.2.4 =
 * Checking PHP version before installation. 
 * Checking if DOM functions are available.
