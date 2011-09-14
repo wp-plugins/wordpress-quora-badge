@@ -1,8 +1,8 @@
 === WordPress Quora Badge ===
-Contributors: amanjain 
-Tags: Quora, WordPress, Quora Badge
-Requires at least: 3
-Tested up to: 3.1
+Contributors: amanjain, thecancerus 
+Tags: Quora, WordPress, Quora Badge, Quora Profile
+Requires at least: 3.0
+Tested up to: 3.2
 Stable tag: 0.2.5
 
 A plugin to show your Quora activities on your wordpress blog.
